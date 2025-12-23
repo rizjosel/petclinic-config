@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: petclinic
+  name: argocd
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: git@github.com-personal:username/petclinic-config.git
+    repoURL: git@github.com:rizzzj/petclinic-config.git
     targetRevision: main
     chart: petclinic
     helm:
