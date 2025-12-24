@@ -1,8 +1,8 @@
 namespace: myapp
 replicaCount: 2
 image:
-  repository: dockerhub-username/petclinic
-  tag: 1.0.0
+  repository: rizjosel/petclinic
+  tag: 18
   pullPolicy: IfNotPresent
 service:
   type: NodePort       # Changeable: ClusterIP / NodePort / LoadBalancer
