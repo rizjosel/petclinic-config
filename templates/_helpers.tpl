@@ -9,7 +9,7 @@ Return the name of the chart
 Return the full name of the release + chart
 */ -}}
 {{- define "petclinic.fullname" -}}
-{{ .Release.Name }}-{{ .Chart.Name }}
+{{ .Release.Name }}
 {{- end -}}
 
 {{- /*
