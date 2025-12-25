@@ -7,11 +7,11 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      name: {{ include "petclinic.name" . }}
+      app: {{ include "petclinic.name" . }}-app
   template:
     metadata:
       labels:
-        name: {{ include "petclinic.name" . }}
+        app: {{ include "petclinic.name" . }}-app
     spec:
       imagePullSecrets:
       - name: dockerhub-secret
