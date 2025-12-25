@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: {{ include "petclinic.name" . }}-app
+    app: {{ include "petclinic.fullname" . }}-app
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.containerPort }}
