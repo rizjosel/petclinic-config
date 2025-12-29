@@ -16,7 +16,7 @@ spec:
               service:
                 name: prometheus-service
                 port:
-                  number: 80
+                  number: 9090
   tls:
     - hosts:
         - prometheus.local
