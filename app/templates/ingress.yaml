@@ -14,7 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: petclinic-lb
+            name: petclinic-svc
             port:
               number: 80
   tls:
