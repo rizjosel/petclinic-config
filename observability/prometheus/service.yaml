@@ -7,7 +7,7 @@ spec:
   selector:
     app: prometheus-server
   ports:
-    - protocol: TCP
+    - name: web
       port: 9090
       targetPort: 9090
   type: ClusterIP
