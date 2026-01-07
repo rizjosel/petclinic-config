@@ -1,5 +1,5 @@
 namespace: petclinic-prod
-replicaCount: 3
+replicaCount: 1
 image:
   tag: 44
 ingress:
@@ -10,10 +10,3 @@ hpa:
   minReplicas: 3
   maxReplicas: 10
   cpuUtilization: 60
-resources:
-  requests:
-    cpu: "300m"
-    memory: "512Mi"
-  limits:
-    cpu: "1"
-    memory: "1Gi"
