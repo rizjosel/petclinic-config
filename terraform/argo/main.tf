@@ -1,4 +1,4 @@
-module "petclinic_stage" {
+module "petclinic" {
   source = "./modules"
 
   providers = {

@@ -13,6 +13,11 @@ variable "branch" {
 }
 variable "path" {}
 
+variable "use_helm" {
+  type    = bool
+  default = false
+}
+
 variable "helm_values" {
   type    = list(string)
   default = []
