@@ -1,6 +1,11 @@
 module "petclinic_stage" {
   source = "./modules"
 
+  providers = {
+    argocd     = argocd
+    kubernetes = kubernetes
+  }
+
   name                  = "petclinic"
   path                  = "app"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
