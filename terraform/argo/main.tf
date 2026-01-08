@@ -9,7 +9,7 @@ module "petclinic" {
   name                  = "petclinic"
   path                  = "app"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "myapp"
   use_helm              = true
   helm_values           = ["values.yaml"]
@@ -26,7 +26,7 @@ module "elasticsearch" {
   name                  = "elasticsearch"
   path                  = "logging/elasticsearch"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "logging"
 }
 
@@ -41,7 +41,7 @@ module "kibana" {
   name                  = "kibana"
   path                  = "logging/kibana"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "logging"
 }
 
@@ -56,7 +56,7 @@ module "filebeat" {
   name                  = "filebeat"
   path                  = "logging/filebeat"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "logging"
 }
 
@@ -71,7 +71,7 @@ module "grafana" {
   name                  = "grafana"
   path                  = "monitoring/grafana"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "grafana"
 }
 
@@ -86,6 +86,6 @@ module "prometheus" {
   name                  = "prometheus"
   path                  = "monitoring/prometheus"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
-  branch                = "stable"
+  branch                = "HEAD"
   destination_namespace = "prometheus"
 }
