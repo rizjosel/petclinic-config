@@ -1,11 +1,11 @@
 module "petclinic_stage" {
   source = "./modules"
 
-  name                  = "petclinic-stage-app"
-  path                  = "app/stage"
+  name                  = "petclinic"
+  path                  = "app"
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
   branch                = "stable"
-  destination_namespace = "myapp-stage"
+  destination_namespace = "myapp"
   use_helm              = true
   helm_values           = ["values.yaml"]
 }
