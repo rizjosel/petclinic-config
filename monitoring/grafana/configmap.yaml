@@ -12,5 +12,5 @@ data:
       - name: Prometheus
         type: prometheus
         access: proxy
-        url: http://prometheus-service.prometheus.svc.cluster.local:9090
+        url: http://prometheus.prometheus.svc.cluster.local:9090
         isDefault: true
