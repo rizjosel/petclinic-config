@@ -1,4 +1,4 @@
-module "petclinic" {
+module "petclinic-prod" {
   source = "./modules"
 
   providers = {
@@ -12,7 +12,25 @@ module "petclinic" {
   branch                = "HEAD"
   destination_namespace = "myapp"
   use_helm              = true
-  helm_values           = ["values.yaml"]
+  helm_values           = ["env/prod.yaml"]
+}
+
+
+module "petclinic-dev" {
+  source = "./modules"
+
+  providers = {
+    argocd     = argocd
+    kubernetes = kubernetes
+  }
+
+  name                  = "petclinic"
+  path                  = "app"
+  repo_url              = "https://github.com/rizjosel/petclinic-config.git"
+  branch                = "HEAD"
+  destination_namespace = "myapp-dev"
+  use_helm              = true
+  helm_values           = ["env/dev.yaml"]
 }
 
 module "elasticsearch" {
