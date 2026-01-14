@@ -1,4 +1,4 @@
-env: myapp-prod
+namesapce: myapp-prod
 
 replicaCount: 2
 
