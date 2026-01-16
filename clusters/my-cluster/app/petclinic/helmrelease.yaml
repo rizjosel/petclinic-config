@@ -11,7 +11,7 @@ spec:
     createNamespace: true
   chart:
     spec:
-      chart: ../../../../app    # exact relative path from helmrelease.yaml to chart folder
+      chart: ./app           # safer path relative to repo root
       sourceRef:
         kind: GitRepository
         name: flux-system
