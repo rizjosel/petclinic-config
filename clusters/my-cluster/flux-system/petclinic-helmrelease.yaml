@@ -7,9 +7,10 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: ../../../app           # relative path from flux-system folder to Helm chart
+      chart: ../../../app
       sourceRef:
         kind: GitRepository
         name: flux-system
         namespace: flux-system
-
+  values:
+    replicaCount: 2
