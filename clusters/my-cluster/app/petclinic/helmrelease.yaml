@@ -11,7 +11,7 @@ spec:
     createNamespace: true
   chart:
     spec:
-      chart: ../../../../app   # relative path to your Helm chart folder
+      chart: ../../../../app
       sourceRef:
         kind: GitRepository
         name: flux-system

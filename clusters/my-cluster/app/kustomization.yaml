@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: ./clusters/my-cluster/apps   # points to apps folder itself
+  path: ./clusters/my-cluster/apps
   prune: true
   sourceRef:
     kind: GitRepository
