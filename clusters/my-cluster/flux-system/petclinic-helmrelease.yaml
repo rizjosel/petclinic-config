@@ -12,10 +12,4 @@ spec:
         kind: GitRepository
         name: flux-system
         namespace: flux-system
-  values:
-    replicaCount: 2
-    service:
-      type: ClusterIP
-    image:
-      repository: spring-petclinic/spring-petclinic
-      tag: latest
+
