@@ -4,10 +4,9 @@ metadata:
   name: petclinic
   namespace: flux-system
 spec:
-  interval: 1m
-  path: ./clusters/my-cluster/apps/petclinic
+  interval: 5m
+  path: ./petclinic
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-    namespace: flux-system
