@@ -4,14 +4,14 @@ metadata:
   name: petclinic
   namespace: flux-system
 spec:
-  interval: 5m
+  interval: 1m
   releaseName: petclinic
   targetNamespace: petclinic
   install:
     createNamespace: true
   chart:
     spec:
-      chart: ../../../../app
+      chart: ../../../../app    # exact relative path from helmrelease.yaml to chart folder
       sourceRef:
         kind: GitRepository
         name: flux-system
