@@ -1,10 +1,10 @@
-module "petclinic" {
-  source = "./modules"
-
-  providers = {
-    argocd     = argocd
-    kubernetes = kubernetes
-  }
+#module "petclinic" {
+#  source = "./modules"
+#
+#  providers = {
+#    argocd     = argocd
+#    kubernetes = kubernetes
+#  }
 
   name                  = "petclinic"
   path                  = "app"
