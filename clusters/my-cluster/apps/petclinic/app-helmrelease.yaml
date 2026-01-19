@@ -10,8 +10,8 @@ spec:
       chart: ./app          
       sourceRef:
         kind: GitRepository
-        name: my-app-repo
-        namespace: myapp
+        name: flux-system
+        namespace: flux-system
   values:
     replicaCount: 2
 
