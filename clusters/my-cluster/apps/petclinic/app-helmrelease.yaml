@@ -12,8 +12,6 @@ spec:
         kind: GitRepository
         name: petclinic-dev
         namespace: myapp
-  valuesFrom:
-    - kind: GitRepository
-      name: petclinic-dev
-      path: ./app/env/dev.yaml
+  valuesFiles:
+    - env/dev.yaml
 
