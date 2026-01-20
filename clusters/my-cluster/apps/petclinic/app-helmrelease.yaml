@@ -20,4 +20,6 @@ spec:
     ingress:
       enabled: true
       host: "petclinic.local"
+    hpa:
+      minReplicas: 1
 
