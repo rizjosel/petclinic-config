@@ -15,5 +15,5 @@ spec:
    valuesFrom:
     - kind: GitRepository
       name: petclinic-dev
-      path: ./app/env/dev.yaml
+      path: ./app/env/prod.yaml
 
