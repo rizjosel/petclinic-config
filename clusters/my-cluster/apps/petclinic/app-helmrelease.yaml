@@ -10,8 +10,8 @@ spec:
       chart: ./app          
       sourceRef:
         kind: GitRepository
-        name: flux-system
-        namespace: flux-system
+        name: petclinic-dev
+        namespace: myapp
   values:
     replicaCount: 2
 
