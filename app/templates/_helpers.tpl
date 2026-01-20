@@ -5,10 +5,12 @@ Return the name of the chart
 {{ .Chart.Name }}
 {{- end -}}
 
+{{- /*
+Return the full name of the release + chart
+*/ -}}
 {{- define "petclinic.fullname" -}}
-{{ printf "%s-%s" .Release.Name .Chart.Name | trunc 63 | trimSuffix "-" }}
+{{ .Release.Name }}
 {{- end -}}
-
 
 {{- /*
 Common labels for all resources
