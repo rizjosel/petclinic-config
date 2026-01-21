@@ -19,5 +19,6 @@ spec:
     hpa:
       minReplicas: 1
     ingress:
-      enabled: false
+      enabled: true
+      host: petclinic.local
 
