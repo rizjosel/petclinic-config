@@ -6,7 +6,12 @@ metadata:
 spec:
   interval: 5m
   chart:
-    path: ../../../app
+    spec:
+      chart: ./app
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
   values:
     image:
       tag: "44"
