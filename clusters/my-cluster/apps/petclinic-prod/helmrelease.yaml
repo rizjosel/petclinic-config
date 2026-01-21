@@ -20,5 +20,3 @@ spec:
     ingress:
       enabled: true
       host: petclinic-prod.local
-      host: petclinic-prod.local
-
