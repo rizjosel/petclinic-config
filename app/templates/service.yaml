@@ -6,7 +6,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ include "petclinic.fullname" . }}-app
+    app: {{ include "petclinic.name" . }}-app
   ports:
     - name: http
       protocol: TCP
