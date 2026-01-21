@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: petclinic
+  namespace: petclinic-dev
+spec:
+  interval: 5m
+  chart:
+    path: ../../../app
+  values:
+    image:
+      tag: "44"
+    hpa:
+      minReplicas: 1
+    ingress:
+      enabled: true
+      host: petclinic.local
+
