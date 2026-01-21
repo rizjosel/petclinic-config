@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: petclinic
+  name: petclinic-dev
   namespace: petclinic-dev
 spec:
   interval: 5m
@@ -13,6 +13,7 @@ spec:
         name: flux-system
         namespace: flux-system
   values:
+    namespace: petclinic-dev
     image:
       tag: "44"
     hpa:
