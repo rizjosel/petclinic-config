@@ -21,7 +21,7 @@ resource "aws_dynamodb_table" "statelock"{
     type = "S"
   }
 }
-/*
+
 terraform {
   backend "s3" {
     bucket         = "s3statebackend100524"
@@ -31,4 +31,4 @@ terraform {
     encrypt        = true
   }
 }
-*/
+
