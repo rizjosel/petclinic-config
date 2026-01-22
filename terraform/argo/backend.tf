@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "mybucket"{
     }
   }
 }
-resource "aws_dynamo_table" "statelock"{
+resource "aws_dynamodb_table" "statelock"{
   name = "state-lock"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "LockID"
