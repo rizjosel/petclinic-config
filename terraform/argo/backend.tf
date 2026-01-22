@@ -11,7 +11,17 @@ resource "aws_s3_bucket" "mybucket"{
     }
   }
 }
+resource "aws_dynamo_table" "statelock"{
+  name = "state-lock"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key = "LockID"
 
+  attribute {
+    name = "LockId"
+    type = "S"
+  }
+}
+/*
 terraform {
   backend "s3" {
     bucket         = "s3statebackend100524"
@@ -21,3 +31,4 @@ terraform {
     encrypt        = true
   }
 }
+*/
