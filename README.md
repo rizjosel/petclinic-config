@@ -1,4 +1,9 @@
-# petclinic-config 
+# On-Prem CI/CD Platform on Kubernetes
+### Overview
+
+This project sets up a full-featured CI/CD platform on an on-premises Kubernetes cluster running on VirtualBox VMs. It combines Jenkins, FluxCD, and Argo CD with observability and logging tools to provide a scalable, GitOps-based deployment platform.
+
+The setup is ideal for learning, testing, and development environments that simulate a production CI/CD pipeline on-premises.
 
 ## Architecture Diagram
 ![image](images/architecture2.png)
