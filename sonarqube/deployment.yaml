@@ -18,10 +18,3 @@ spec:
           image: sonarqube:community
           ports:
             - containerPort: 9000
-          resources:
-            requests:
-              memory: "1Gi"
-              cpu: "500m"
-            limits:
-              memory: "2Gi"
-              cpu: "1"
