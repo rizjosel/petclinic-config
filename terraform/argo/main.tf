@@ -89,3 +89,18 @@ module "prometheus" {
   branch                = "HEAD"
   destination_namespace = "prometheus"
 }
+
+module "sonarqube" {
+  source = "./modules"
+
+  providers = {
+    argocd     = argocd
+    kubernetes = kubernetes
+  }
+
+  name                  = "sonarqube"
+  path                  = "sonarqube"
+  repo_url              = "https://github.com/rizjosel/petclinic-config.git"
+  branch                = "HEAD"
+  destination_namespace = "sonarqube"
+}
