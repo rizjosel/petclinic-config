@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: sonarqube
-          image: sonarqube:community
+          image: sonarqube:lts-community
           ports:
             - containerPort: 9000
