@@ -15,6 +15,7 @@
   helm_values           = ["values.yaml"]
 */
 
+/*
 module "elasticsearch" {
   source = "./modules"
 
@@ -88,7 +89,7 @@ module "prometheus" {
   repo_url              = "https://github.com/rizjosel/petclinic-config.git"
   branch                = "HEAD"
   destination_namespace = "prometheus"
-}
+}*/
 
 module "sonarqube" {
   source = "./modules"
